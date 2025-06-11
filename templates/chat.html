@@ -295,8 +295,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Tìm Kiếm Thuốc Thực Phẩm Chức Năng</h1>
-            <p>Tra cứu thông tin và tìm kiếm thuốc phù hợp</p>
+            <h1>Tìm Kiếm Thực Phẩm Chức Năng</h1>
+            <p>Tra cứu thông tin và tìm kiếm thực phẩm chức năng phù hợp</p>
         </div>
         
         <div class="search-section">
@@ -305,7 +305,7 @@
                     type="text" 
                     id="searchInput" 
                     class="search-input" 
-                    placeholder="Nhập tên thuốc thực phẩm chức năng cần tìm..."
+                    placeholder="Nhập tên thực phẩm chức năng cần tìm..."
                 />
                 <button type="submit" class="search-button">Tìm Kiếm</button>
             </form>
@@ -367,7 +367,7 @@
             async function performSearch() {
                 const query = searchInput.value.trim();
                 if (!query) {
-                    resultsContainer.innerHTML = '<div class="no-results">Hãy nhập tên thuốc hoặc chọn danh mục.</div>';
+                    resultsContainer.innerHTML = '<div class="no-results">Hãy nhập tên thực phẩm hoặc chọn danh mục.</div>';
                     return;
                 }
     
@@ -389,7 +389,7 @@
                 resultsContainer.innerHTML = '';
     
                 if (!medsArray.length) {
-                    resultsContainer.innerHTML = '<div class="no-results">Không tìm thấy thuốc phù hợp</div>';
+                    resultsContainer.innerHTML = '<div class="no-results">Không tìm thấy thực phẩm phù hợp</div>';
                     return;
                 }
     
