@@ -38,7 +38,7 @@ class MedicineSearchEngine:
         columns = ['id', 'name', 'composition', 'uses', 'side_effects', 'image_url', 'manufacturer', 'excellent_review', 'average_review', 'poor_review']
         query = f"""
         SELECT {', '.join(columns)}
-        FROM medicines_detail
+        FROM functional_foods_detail
         WHERE id IN {tuple([int(id) for id in top_ids])}
         ORDER BY average_review DESC
         """
