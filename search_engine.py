@@ -18,7 +18,7 @@ class MedicineSearchEngine:
         self._load_data()
 
     def _load_data(self):
-        self.cursor.execute("SELECT id, embedding FROM medicines_detail")
+        self.cursor.execute("SELECT id, embedding FROM functional_foods_detail")
         rows = self.cursor.fetchall()
         self.data = []
         self.embeddings = []
